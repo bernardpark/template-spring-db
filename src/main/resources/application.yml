@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: db-app
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  port: 8080
+      
+---
+spring:
+  profiles: cloud
+  datasource:
+    url: jdbc:mysql://${vcap.services.demo-db-broker.credentials.url}:3306/demodb
+    username: ${vcap.services.demo-db-broker.credentials.username}
+    password: ${vcap.services.demo-db-broker.credentials.password}
+   

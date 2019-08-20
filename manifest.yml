@@ -1,0 +1,8 @@
+---
+applications:
+- name: spring-db-app
+  memory: 768M
+  instances: 1
+  services:
+  - demo-db-broker
+  path: ./target/template-spring-db-0.0.1-SNAPSHOT.jar 
