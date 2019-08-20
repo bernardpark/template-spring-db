@@ -48,8 +48,8 @@ Try the following commands in your shell.
 
 ```bash
 curl "localhost:8080/add-customer?firstName=John&lastName=Doe"
-curl "localhost:8080/get-customers
-curl "localhost:8080/delete-customers
+curl "localhost:8080/get-customers"
+curl "localhost:8080/delete-customers"
 ```
 
 ## Running in PCF
@@ -75,8 +75,8 @@ Try the following commands in your shell.
 
 ```bash
 curl -k "$YOUR_APP_ENDPOINT/add-customer?firstName=John&lastName=Doe"
-curl -k "$YOUR_APP_ENDPOINT/get-customers
-curl -k "$YOUR_APP_ENDPOINT/delete-customers
+curl -k "$YOUR_APP_ENDPOINT/get-customers"
+curl -k "$YOUR_APP_ENDPOINT/delete-customers"
 ```
 
 ## Authors
